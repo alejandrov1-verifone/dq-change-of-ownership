@@ -84,7 +84,7 @@
             <span class="store-prefix">DAIRY QUEEN #</span>
             <input id="e-store" type="text" placeholder="12345" maxlength="5" oninput="this.value=this.value.replace(/\D/g,'').slice(0,5); updateStorePreview();"/>
           </div>
-          <span class="store-hint" id="store-hint">Enter 5 digits — will be submitted as <strong>DQ0XXXXX</strong></span>
+          <span class="store-hint" id="store-hint">Enter the 5 digits of your store number — will be submitted as <strong>DQ0XXXXX</strong></span>
         </div>
         <div class="field">
           <div class="label-wrap">
@@ -440,7 +440,7 @@ function updateStorePreview() {
     hint.innerHTML = 'Enter ' + (5 - digits.length) + ' more digit' + (5 - digits.length !== 1 ? 's' : '') + ' — will be submitted as <strong>DQ0XXXXX</strong>';
     hint.style.color = '#999';
   } else {
-    hint.innerHTML = 'Enter 5 digits — will be submitted as <strong>DQ0XXXXX</strong>';
+    hint.innerHTML = 'Enter the 5 digits of your store number — will be submitted as <strong>DQ0XXXXX</strong>';
     hint.style.color = '#999';
   }
 }
