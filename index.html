@@ -613,7 +613,7 @@ function submitEmail() {
   var submitBtn = document.querySelector('.submit-btn');
   submitBtn.textContent = 'Sending...'; submitBtn.disabled = true;
 
-  fetch('https://default611a22d68c40495884e3ce47d8205d.98.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/72085f00ff2b417aac4af38fe3741fe7/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=X8rB2UzlcAb7P9Rfs263-jdtp0zghsV_0yVry8Y8ETA', {
+  fetch('https://default611a22d68c40495884e3ce47d8205d.98.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/0f7a2384407c4a7fb2368d8718510aae/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=fK9nOsppWkn_h2kKwGvorSLyl4p1WCimw_vqf_fW8MY', {
     method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload)
   })
   .then(function(response) {
